@@ -1,6 +1,6 @@
 {
   "name": "klump-vue-3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Klump Component for Vue",
   "license": "SEE LICENSE IN License",
   "private": false,
@@ -20,7 +20,7 @@
     "Klump",
     "Vue",
     "Vuejs",
-    "Vue 2",
+    "Vue 3",
     "Klump Checkout",
     "Pay With Klump"
   ],

@@ -41,7 +41,7 @@ yarn add klump-vue-3
 </template>
 
 <script>
-import {KlumpCheckout} from 'klump-vue';
+import {KlumpCheckout} from 'klump-vue-3';
 export default defineComponent({
   components:{
     KlumpCheckout

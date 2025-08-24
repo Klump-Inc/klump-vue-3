@@ -1,19 +1,23 @@
 <script>
-import { defineComponent } from 'vue';
-
-export default /*#__PURE__*/defineComponent({
-  name: 'KlumpCheckout',
+export default /*#__PURE__*/ {
+    name: 'KlumpCheckout',
+    props: {
+        devMode:{
+            type: Boolean,
+            default: false
+        }
+    },
     methods:{
         payWithKlump() {
            this.$emit('on-click')
-		  },
+		},
     },
     mounted() {
         const klumpScript = document.createElement("script");
-        klumpScript.src = "https://js.useklump.com/klump.js";
+        klumpScript.src = this.devMode ? "https://staging-js.useklump.com/klump.js" : "https://js.useklump.com/klump.js";
         document.head.appendChild(klumpScript)
     }
-});
+}
 </script>
 
 <template>
